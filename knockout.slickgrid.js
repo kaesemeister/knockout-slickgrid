@@ -1,12 +1,14 @@
 (function(root, factory) {
-    if (typeof module !== "undefined" && typeof module.exports !== "undefined") {
-        factory(module.exports = require("knockout"));
+    if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+        var ko = require('knockout');
+        var _ = require('lodash');
+        module.exports = factory(ko, _);
     } else if (typeof define === 'function' && define.amd) {
-        define(["knockout"], factory);
+        define(['knockout', 'lodash'], factory);
     } else {
-        factory(ko);
+        factory(ko, _);
     }
-}(this, function (ko) {
+}(this, function (ko, _) {
 
     ko.bindingHandlers.slickgrid = {
 
@@ -45,5 +47,7 @@
             grid.render();
         }
     };
+
+    return ko;
 
 }));
