@@ -1,0 +1,25 @@
+{
+  "name": "knockout-slickgrid",
+  "version": "0.0.1",
+  "authors": [
+    "Michael Drescher <kaesemeister@gmail.com>"
+  ],
+  "description": "slickgrid binding for knockout",
+  "main": "knockout.slickgrid.js",
+  "keywords": [
+    "knockout",
+    "slickgrid"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/kaesemeister/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "knockout": "~3.2.0"
+  }
+}
